@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class model2
+{
+   public static void main(String[] args)
+{
+	Scanner inp = new Scanner(System.in);
+        System.out.print("enter the n value:");
+     try{
+	int n = inp.nextInt();
+        if(n<=0){
+		System.out.print("enter valid number greater than 0.");
+         }
+	else{
+		int sum=0;
+		System.out.println("enter the numbers:");
+		for(int i=0;i<n;i++)
+		{
+   			sum=sum+inp.nextInt();
+		}
+             System.out.print("sum is: "+ sum);
+
+
+	 }
+}catch(Exception e){
+  System.out.println("invalid number.enter valid number greater than 0.");
+}
+
+        
+}
+
+}
